@@ -4,8 +4,8 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, CommandHandler, filters, ContextTypes
 
 # ===== তোমার দুটো key এখানে বসাও =====
-TELEGRAM_TOKEN = "তোমার_telegram_bot_token"
-OPENROUTER_API_KEY = "তোমার_openrouter_api_key"
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
 # =========================================
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
